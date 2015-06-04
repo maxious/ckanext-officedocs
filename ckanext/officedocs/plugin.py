@@ -15,7 +15,7 @@ class OfficeDocsPlugin(plugins.SingletonPlugin):
         return {
             "name": "officedocs_view",
             "title": toolkit._('Microsoft Office Previewer'),
-            "default_title": toolkit._('Preview'),
+            "default_title": 'MS Office Preview',
             "icon": "compass",
             "always_available": True,
             "iframed": False,
