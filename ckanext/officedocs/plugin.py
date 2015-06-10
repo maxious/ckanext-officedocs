@@ -29,6 +29,8 @@ class OfficeDocsPlugin(plugins.SingletonPlugin):
         }
 
     def can_view(self, data_dict):
+        if 'format' not in data_dict['resource']:
+            return False
         supported_formats = [
             "DOC", "DOCX", "XLS", "XLSX", "PPT", "PPTX"
         ]
